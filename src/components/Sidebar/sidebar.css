@@ -5,8 +5,9 @@
   background-color: var(--color-white);
   padding: 1rem;
   height: 100vh;
-  border-right: .1rem solid var(--color-gray);
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
   transition: all 1s ease-in-out;
 }
 
@@ -92,4 +93,18 @@
   padding: 1rem;
   border-radius: 1rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 48rem) {
+
+  .sidebar-container .close {
+    display: flex;
+  }
+
+  .sidebar-container.open-sidebar {
+    &.sidebar-container .close {
+      display: none;
+    }
+
+  }
 }

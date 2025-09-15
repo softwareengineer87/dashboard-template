@@ -58,7 +58,6 @@ function Sidebar() {
             height={50}
             alt='Logotipo'
           />
-          <h4 className='close'>{business.payload?.name}</h4>
         </header>
         <nav className='menu'>
           <ul>
