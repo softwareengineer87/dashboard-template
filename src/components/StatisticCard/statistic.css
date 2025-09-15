@@ -1,0 +1,28 @@
+.statistic-container .statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.statistic .icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--color-black);
+}
+
+.statistic-container .statistic h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--color-red);
+}
+
+.statistic-container .statistic p {
+  color: var(--color-gray);
+}

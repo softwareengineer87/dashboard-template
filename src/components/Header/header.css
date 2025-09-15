@@ -1,0 +1,11 @@
+.header-container {
+  background-color: var(--color-white);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-container .header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
