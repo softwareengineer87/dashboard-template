@@ -6,6 +6,8 @@ import { useContext, useState, type FormEvent } from 'react';
 import { Message } from '@/components/Message';
 import Link from 'next/link';
 import { Auth } from '@/data/contexts/Auth';
+import LoginImage from '../../../../../public/login.svg';
+import Image from 'next/image';
 
 function Signup() {
 
@@ -63,6 +65,12 @@ function Signup() {
       <div className='signup'>
         <div className='signup-left'>
           <h2>Bem vindo(a) ao Sistema de Agendamentos</h2>
+          <Image
+            src={LoginImage}
+            width={200}
+            height={200}
+            alt='Imagem login'
+          />
           <p>
             Crie sua conta, depois faça login.
           </p>

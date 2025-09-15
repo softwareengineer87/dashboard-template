@@ -5,6 +5,8 @@ import './login.css';
 import { useContext, useState, type FormEvent } from 'react';
 import { Message } from '@/components/Message';
 import { Auth } from '@/data/contexts/Auth';
+import Image from 'next/image';
+import LoginImage from '../../../../public/login.svg';
 
 function SignIn() {
   const {
@@ -32,6 +34,12 @@ function SignIn() {
       <div className='login'>
         <div className='login-left'>
           <h2>Bem vindo(a) ao Sistema de Agendamentos</h2>
+          <Image
+            src={LoginImage}
+            width={200}
+            height={200}
+            alt='Imagem login'
+          />
           <p>
             Faça seu login para ter acesso ao dashboard
             e as funcionalidades

@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100dvh;
   gap: 4rem;
-  margin-top: 2rem;
 }
 
 .login-container .login .login-left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
   text-align: center;
+  background-color: var(--color-white);
+  height: inherit;
+  border-radius: 0 5rem 5rem 0;
+  box-shadow: 2px 3px 12px 3px rgba(0, 0, 0, 0.1);
 }
 
 .login-container .login .login-left h2 {
@@ -29,10 +34,7 @@
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  background-color: var(--color-white);
   padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 3px 5px 10px 1px rgb(0, 0, 0, 0.2);
 }
 
 .login-container .login .login-right .shield {
@@ -48,6 +50,7 @@
 
 .login-container .login .login-right .form-login input {
   padding: 1rem;
+  background-color: var(--color-white);
 }
 
 .login-container .login .login-right .form-login .btn-login {

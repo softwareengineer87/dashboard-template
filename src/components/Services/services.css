@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .services-container .services .table-services {

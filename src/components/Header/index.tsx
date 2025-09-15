@@ -1,7 +1,7 @@
 'use client';
 
 import { Auth } from "@/data/contexts/Auth";
-import { IconDashboard } from "@tabler/icons-react";
+import { IconDashboard, IconUser } from "@tabler/icons-react";
 import { useContext } from "react";
 import './header.css';
 
@@ -12,8 +12,16 @@ function Header() {
   return (
     <header className="header-container">
       <div className="header">
-        <IconDashboard size={20} />
-        <p>Dashboard - {business.payload?.name}</p>
+        <div className="header-left">
+          <IconDashboard size={20} />
+          <p>Dashboard</p>
+        </div>
+        <div className="header-right">
+          <p>{business.payload?.name}</p>
+          <span className="icon-user">
+            <IconUser size={30} />
+          </span>
+        </div>
       </div>
     </header>
   );

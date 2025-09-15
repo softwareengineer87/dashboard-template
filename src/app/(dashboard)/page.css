@@ -32,6 +32,6 @@
 
 @media screen and (min-width: 64rem) {
   .container-main .statistics {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

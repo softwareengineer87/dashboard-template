@@ -6,13 +6,14 @@ import { Auth } from '@/data/contexts/Auth';
 import { useServices } from '@/data/hooks/useServices';
 import { Service } from '@/types/Service';
 import { StatisticCard } from '@/components/StatisticCard';
-import { IconCalendar, IconPigMoney, IconTool, IconUsers } from '@tabler/icons-react';
+import { IconCalendar, IconCalendarMonth, IconCurrencyDollar, IconPigMoney, IconTool, IconUsers } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 import { useBusiness } from '@/data/hooks/useBusiness';
 import { Message } from '@/components/Message';
 import { UpdateService } from '@/components/UpdateService';
 import { Services } from '@/components/Services';
 import { Customers } from '@/components/Customers';
+import { Format } from '@/utils/Format';
 
 export default function Home() {
 
@@ -116,11 +117,16 @@ export default function Home() {
           icon={<IconUsers />}
         />
         <StatisticCard
-          total={15}
+          total={Format.formatPrice(240)}
           description='Valor total em agendamentos'
-          icon={<IconPigMoney />}
+          icon={<IconCurrencyDollar />}
         />
       </section>
+      <StatisticCard
+        total={1200}
+        description='Este mes'
+        icon={<IconCalendarMonth />}
+      />
       {actualService ? (
         <UpdateService
           service={actualService}
