@@ -14,6 +14,7 @@ import { UpdateService } from '@/components/UpdateService';
 import { Services } from '@/components/Services';
 import { Customers } from '@/components/Customers';
 import { Format } from '@/utils/Format';
+import { Search } from '@/components/Search';
 
 export default function Home() {
 
@@ -97,9 +98,7 @@ export default function Home() {
         status={status}
         activeMessage={activeMessage}
       />
-      <div className='buttons'>
-        <button onClick={handleForm} className='btn-new'>Cadastrar serviço</button>
-      </div>
+      <Search />
       <section className='statistics'>
         <StatisticCard
           total={totalServices}
