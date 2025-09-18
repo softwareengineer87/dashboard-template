@@ -12,6 +12,22 @@
   border-radius: 1rem;
 }
 
+.search .search-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search .search-left p {
+  color: var(--color-gray);
+}
+
+.search .search-left .months {
+  color: var(--color-red);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
 .search-right .search-form .box-input input {
   flex: 1;
   padding: 1rem;
